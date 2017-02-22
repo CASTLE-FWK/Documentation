@@ -12,7 +12,7 @@ Welcome to CASTLE's documentation!
    :titlesonly:
    :glob:
 
-   CASTLE/*
+   CASTLE/CASTLE.rst
    CASL/*
 
 
