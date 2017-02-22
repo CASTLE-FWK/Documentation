@@ -133,10 +133,58 @@ End_Conditions
 AGENTS
 ^^^^^^
 
+Description
+###############
+**(Optional)**
+
+This allows the designer to add a helpful description to the model. Newlines are allowed.
+
+Parameters
+##########
+
+Functions
+#########
+
+Behaviors
+##########
+
+Interactions
+#############
+
+Adaptation
+##########
+
+Subsystems
+###########
+
+
 
 ENVIRONMENTS
 ^^^^^^^^^^^^
 
+Description
+###############
+**(Optional)**
+
+This allows the designer to add a helpful description to the model. Newlines are allowed.
+
+Parameters
+##########
+
+Functions
+#########
+
+Behaviors
+##########
+
+Interactions
+#############
+
+Adaptation
+##########
+
+Subsystems
+###########
 
 CASL-SG
 -------
