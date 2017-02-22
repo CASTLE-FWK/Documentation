@@ -6,7 +6,7 @@ This documentation will help with all stages of using CASTLE, that is, using CAS
 
 
 The documentation is available to read online at [ReadTheDocs](http://castle-documentation.readthedocs.io/en/latest/)
-A PDF of all the documentation is available at [PDF Link]()
+A PDF of all the documentation is available at [PDF Link](http://media.readthedocs.org/pdf/castle-documentation/latest/castle-documentation.pdf)
 
 
 
