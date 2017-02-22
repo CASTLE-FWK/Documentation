@@ -10,9 +10,10 @@ Welcome to CASTLE's documentation!
    :maxdepth: 2
    :caption: Contents:
    :titlesonly:
+   :glob:
 
-   CASTLE
-   CASL
+   CASTLE/*
+   CASL/*
 
 
 
