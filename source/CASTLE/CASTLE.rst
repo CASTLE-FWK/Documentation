@@ -1,8 +1,10 @@
 CASTLE
 ==================================
 
-.. contents::
-	:depth: 2
+.. toctree::
+	:maxdepth: 1
+
+	Metrics.rst
 
 
 Overview

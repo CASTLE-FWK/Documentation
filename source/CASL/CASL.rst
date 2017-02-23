@@ -1,4 +1,4 @@
-CASL Documentation
+CASL
 ==================================
 
 .. contents::
@@ -136,25 +136,17 @@ End_Conditions
 
 .. include:: Environment.rst
 
-.. include:: Group.rst
 CASL-SG
--------
+--------
 
 
-
-
-
-
-
+.. include:: Group.rst
 
 
 Examples
 --------
 Example CASL and CASL-SG models are located in the CASTLE-FWK Github page. However, here are some useful simple models with thorough descriptions.
 
-- Game Of Life
-- Flock of Birds
-- Social Network
-
+.. include:: Examples/Examples.rst
 
 

@@ -52,8 +52,11 @@ Loops
 
 Self Reference
 ^^^^^^^^^^^^^^^^
+To reference a parameter in the same entity, the ``self`` keyword must be used. For example::
+	
+	var int:newNum = self.oldNum * 2;
 
-``self``
+``self`` behaves similarly to the ``this`` keyword in Java. However, when referencing parameters from the same entity, the ``self`` keyword must be used. The CASL editor will warn you if this is not done.
 
 
 Component Reference
