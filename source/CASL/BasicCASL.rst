@@ -1,10 +1,5 @@
-Getting Started
+CASL Basics
 ----------------
-
-CASL Overview
-^^^^^^^^^^^^^^^
-
-
 
 The Language
 ^^^^^^^^^^^^^^
@@ -86,7 +81,11 @@ These are::
 	FUNCTION.functionName();
 	BEHAVIOR.behaviorName();
 	INTERACTION.interactionName();
+	AGT_INTERACTION.interactionName();
+	ENV_INTERACTION.interactionName();
+	GRP_TRANSMISSION.transmissionName();
 	ADAPTATION.adaptationName();
+
 
 TODO: Special component references
 
