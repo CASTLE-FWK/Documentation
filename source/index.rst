@@ -14,6 +14,7 @@ Welcome to CASTLE's documentation!
 
    CASTLE/CASTLE.rst
    CASL/*
+   Publications
 
 
 
