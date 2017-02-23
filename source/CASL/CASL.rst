@@ -1,19 +1,22 @@
 CASL Documentation
 ==================================
 
+.. contents::
+	:depth: 3
+
 .. toctree::
 	:maxdepth: 2
    	:glob:
-	
+	:hidden:
+
+	Blocks/*
 	Examples/*
-
-.. contents::
-	:depth: 2
-
 
 Introduction
 ===============
 Complex Adaptive Systems Language (CASL) is a declarative agent-based modeling language for create large scale and complicated complex adaptive systems models.
+
+A note: the term CASL by itself refers to both CASL and CASL-SG. CASL-SG only refers to the additional features of CASL-SG. In the case of a CASL (and not CASL-SG) description, it will be stated as such.
 
 Publications featuring CASL
 ----------------------------
@@ -132,6 +135,19 @@ End_Conditions
 
 AGENTS
 ^^^^^^
+An Agent in CASL and CASL-SG has the following structure:: 
+
+	AGENT theAgentsName: {
+		description: "";
+		parameters: {};
+		functions: {};
+		behaviors: {};
+		interactions: {};
+		adaptation: {};
+		subsystems: {};
+	};
+
+An ``AGENT`` block starts of with ``AGENT`` and the agents name
 
 Description
 ###############
@@ -140,22 +156,60 @@ Description
 This allows the designer to add a helpful description to the model. Newlines are allowed.
 
 Parameters
-##########
+###########
+This stores the ``AGENT`` parameters. Some examples::
+
+	var bool:Alive = false;
+	agt Cell:aNeighbour;
+
+:doc:`More about Parameters <Blocks/Parameters>`
 
 Functions
 #########
+This stores the ``AGENT`` functions. Some examples::
+
+	//Double a number and return
+	def doubleNumber(var int:num)(var int:newNum): {
+		newNum = num * 2;
+	};
+
+	//Set the position of this AGENT
+	def setPosition(var Vector2:pos)(): {
+		self.position = pos;
+	};
+
+	//Get the position of this AGENT
+	def getPosition()(var Vector2:pos): {
+		pos = self.position.
+	};
+
+:doc:`More about Functions <Blocks/Functions>`
 
 Behaviors
 ##########
 
+
+
+:doc:`More about Behaviors <Blocks/Behaviors>`
+
 Interactions
 #############
+
+
+
+:doc:`More about Interactions <Blocks/Interactions>`
 
 Adaptation
 ##########
 
+
+:doc:`More about Adaptations <Blocks/Adaptations>`
+
 Subsystems
 ###########
+
+
+:doc:`More about Subsystems <Blocks/Subsystems>`
 
 
 
@@ -169,22 +223,60 @@ Description
 This allows the designer to add a helpful description to the model. Newlines are allowed.
 
 Parameters
-##########
+###########
+This stores the ``AGENT`` parameters. Some examples::
+
+	var bool:Alive = false;
+	agt Cell:aNeighbour;
+
+:doc:`More about Parameters <Blocks/Parameters>`
 
 Functions
 #########
+This stores the ``AGENT`` functions. Some examples::
+
+	//Double a number and return
+	def doubleNumber(var int:num)(var int:newNum): {
+		newNum = num * 2;
+	};
+
+	//Set the position of this AGENT
+	def setPosition(var Vector2:pos)(): {
+		self.position = pos;
+	};
+
+	//Get the position of this AGENT
+	def getPosition()(var Vector2:pos): {
+		pos = self.position.
+	};
+
+:doc:`More about Functions <Blocks/Functions>`
 
 Behaviors
 ##########
 
+
+
+:doc:`More about Behaviors <Blocks/Behaviors>`
+
 Interactions
 #############
+
+
+
+:doc:`More about Interactions <Blocks/Interactions>`
 
 Adaptation
 ##########
 
+
+:doc:`More about Adaptations <Blocks/Adaptations>`
+
 Subsystems
 ###########
+
+
+:doc:`More about Subsystems <Blocks/Subsystems>`
 
 CASL-SG
 -------
@@ -193,6 +285,49 @@ CASL-SG
 
 SEMANTIC GROUPS
 ^^^^^^^^^^^^^^^
+
+Parameters
+###########
+This stores the ``AGENT`` parameters. Some examples::
+
+	var bool:Alive = false;
+	agt Cell:aNeighbour;
+
+:doc:`More about Parameters <Blocks/Parameters>`
+
+Functions
+#########
+This stores the ``AGENT`` functions. Some examples::
+
+	//Double a number and return
+	def doubleNumber(var int:num)(var int:newNum): {
+		newNum = num * 2;
+	};
+
+	//Set the position of this AGENT
+	def setPosition(var Vector2:pos)(): {
+		self.position = pos;
+	};
+
+	//Get the position of this AGENT
+	def getPosition()(var Vector2:pos): {
+		pos = self.position.
+	};
+
+:doc:`More about Functions <Blocks/Functions>`
+
+Behaviors
+##########
+
+
+
+:doc:`More about Behaviors <Blocks/Behaviors>`
+
+GROUP_TRANSFER
+###############
+
+
+
 
 
 Examples
