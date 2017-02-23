@@ -1,2 +1,9 @@
-Introduction to CAS, CASL, & CASTLE
+Introduction
 ====================================
+
+Complex Adaptive Systems
+====================================
+
+Yet Another Modeling Language
+====================================
+

@@ -8,7 +8,7 @@ CASTLE documentation
 Documentation for the CASTLE framework.
 
 Introduction to CAS, CASL, & CASTLE
-====================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. toctree::
    :maxdepth: 2
    :hidden:
