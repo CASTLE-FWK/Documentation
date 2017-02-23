@@ -1,4 +1,4 @@
-CASTLE Documentation
+CASTLE
 ==================================
 
 .. contents::
