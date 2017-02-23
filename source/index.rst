@@ -7,13 +7,13 @@ Welcome to CASTLE's documentation!
 ==================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents:
    :titlesonly:
    :glob:
 
    CASTLE/CASTLE.rst
-   CASL/*
+   CASL/CASL.rst
    Publications
 
 

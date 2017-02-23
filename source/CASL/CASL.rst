@@ -2,7 +2,7 @@ CASL Documentation
 ==================================
 
 .. contents::
-	:depth: 3
+	:depth: 2
 
 .. toctree::
 	:maxdepth: 2
@@ -11,6 +11,8 @@ CASL Documentation
 
 	Blocks/*
 	Examples/*
+	SystemCalls
+	BasicCASL
 
 Introduction
 ------------
@@ -130,202 +132,17 @@ End_Conditions
 ####################
 
 
-AGENTS
-^^^^^^
-An Agent in CASL and CASL-SG has the following structure:: 
+.. include:: Agent.rst
 
-	AGENT theAgentsName: {
-		description: "";
-		parameters: {};
-		functions: {};
-		behaviors: {};
-		interactions: {};
-		adaptation: {};
-		subsystems: {};
-	};
+.. include:: Environment.rst
 
-An ``AGENT`` block starts of with ``AGENT`` and the agents name
-
-Description
-###############
-**(Optional)**
-
-This allows the designer to add a helpful description to the model. Newlines are allowed.
-
-Parameters
-###########
-This stores the ``AGENT`` parameters. Some examples::
-
-	var bool:Alive = false;
-	agt Cell:aNeighbour;
-
-:doc:`More about Parameters <Blocks/Parameters>`
-
-Functions
-#########
-This stores the ``AGENT`` functions. Some examples::
-
-	//Double a number and return
-	def doubleNumber(var int:num)(var int:newNum): {
-		newNum = num * 2;
-	};
-
-	//Set the position of this AGENT
-	def setPosition(var Vector2:pos)(): {
-		self.position = pos;
-	};
-
-	//Get the position of this AGENT
-	def getPosition()(var Vector2:pos): {
-		pos = self.position.
-	};
-
-:doc:`More about Functions <Blocks/Functions>`
-
-Behaviors
-##########
-This stores the ``AGENT`` behaviors. An example::
-
-	changeStateToDead[SELF][DELAYED](): {
-		FUNCTION.setState(false);
-	};
-
-
-:doc:`More about Behaviors <Blocks/Behaviors>`
-
-Interactions
-#############
-
-
-
-:doc:`More about Interactions <Blocks/Interactions>`
-
-Adaptation
-##########
-
-
-:doc:`More about Adaptations <Blocks/Adaptations>`
-
-Subsystems
-###########
-
-
-:doc:`More about Subsystems <Blocks/Subsystems>`
-
-
-
-ENVIRONMENTS
-^^^^^^^^^^^^
-
-Description
-###############
-**(Optional)**
-
-This allows the designer to add a helpful description to the model. Newlines are allowed.
-
-Parameters
-###########
-This stores the ``AGENT`` parameters. Some examples::
-
-	var bool:Alive = false;
-	agt Cell:aNeighbour;
-
-:doc:`More about Parameters <Blocks/Parameters>`
-
-Functions
-#########
-This stores the ``AGENT`` functions. Some examples::
-
-	//Double a number and return
-	def doubleNumber(var int:num)(var int:newNum): {
-		newNum = num * 2;
-	};
-
-	//Set the position of this AGENT
-	def setPosition(var Vector2:pos)(): {
-		self.position = pos;
-	};
-
-	//Get the position of this AGENT
-	def getPosition()(var Vector2:pos): {
-		pos = self.position.
-	};
-
-:doc:`More about Functions <Blocks/Functions>`
-
-Behaviors
-##########
-
-
-
-:doc:`More about Behaviors <Blocks/Behaviors>`
-
-Interactions
-#############
-
-
-
-:doc:`More about Interactions <Blocks/Interactions>`
-
-Adaptation
-##########
-
-
-:doc:`More about Adaptations <Blocks/Adaptations>`
-
-Subsystems
-###########
-
-
-:doc:`More about Subsystems <Blocks/Subsystems>`
-
+.. include:: Group.rst
 CASL-SG
 -------
 
 
 
-SEMANTIC GROUPS
-^^^^^^^^^^^^^^^
 
-Parameters
-###########
-This stores the ``AGENT`` parameters. Some examples::
-
-	var bool:Alive = false;
-	agt Cell:aNeighbour;
-
-:doc:`More about Parameters <Blocks/Parameters>`
-
-Functions
-#########
-This stores the ``AGENT`` functions. Some examples::
-
-	//Double a number and return
-	def doubleNumber(var int:num)(var int:newNum): {
-		newNum = num * 2;
-	};
-
-	//Set the position of this AGENT
-	def setPosition(var Vector2:pos)(): {
-		self.position = pos;
-	};
-
-	//Get the position of this AGENT
-	def getPosition()(var Vector2:pos): {
-		pos = self.position.
-	};
-
-:doc:`More about Functions <Blocks/Functions>`
-
-Behaviors
-##########
-
-
-
-:doc:`More about Behaviors <Blocks/Behaviors>`
-
-GROUP_TRANSFER
-###############
 
 
 
