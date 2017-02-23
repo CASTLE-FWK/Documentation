@@ -1,11 +1,11 @@
 Behaviors
-=========
+^^^^^^^^^^
 
 The primary driver of all entities in CASL.
 
 
 Structure
----------
+##########
 A behavior in CASL consists of a name, contact type, trigger type, and input parameters. Two simple examples::
 
 	//Generic
@@ -19,7 +19,7 @@ A behavior in CASL consists of a name, contact type, trigger type, and input par
 	};
 
 Contact Types
--------------
+####################
 
 There are 2 contact types, namely, ``SELF``, ``ENVIRONMENT``, and ``AGENT``.
 
@@ -30,7 +30,7 @@ There are 2 contact types, namely, ``SELF``, ``ENVIRONMENT``, and ``AGENT``.
 * ``AGENT``:
 
 Trigger Types
---------------
+####################
 
 There are 4 trigger types, namely, ``INSTANT``, ``DELAYED``, ``STEP``, ``REPEAT``.
 
@@ -48,9 +48,9 @@ There are 4 trigger types, namely, ``INSTANT``, ``DELAYED``, ``STEP``, ``REPEAT`
 
 
 Input Parameters
------------------
+##############################
 
 
 
 Examples
----------
+####################

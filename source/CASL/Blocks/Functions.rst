@@ -1,8 +1,8 @@
 Functions
-=========
+^^^^^^^^^^
 
 Structure
-----------
+################
 
 A function in CASL consists of ``def``, a function name, at least zero input parameters, and an optional single output parameter. An example is::
 
@@ -18,9 +18,9 @@ Return types are implicit in functions and only occur if a output variable is de
 
 
 Input and output parameters
-----------------------------
+################################
 
 
 
 Examples
----------
+################

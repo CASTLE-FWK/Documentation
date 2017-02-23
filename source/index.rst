@@ -3,8 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-CASTLE documentation!
+CASTLE documentation
 ==================================
+Documentation for the CASTLE framework.
 
 Overview
 --------
@@ -12,17 +13,14 @@ Overview
 
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Components:
-   :titlesonly:
+   :maxdepth: 2
+   :caption: Components:   
    :glob:
 
-   CASTLE/ObservationTool.rst 
-   CASL/CASL.rst
-   Publications
-
-
-
+   CASL <CASL/CASL.rst>
+   Observation Tool <CASTLE/ObservationTool.rst>
+   Publications <Publications>
+   
 
 
 Indices and tables

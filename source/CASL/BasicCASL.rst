@@ -1,21 +1,21 @@
 CASL Basics
-===========
+------------
 
 CASL Structure
---------------
+^^^^^^^^^^^^^^^
 
 
 
 The Language
--------------
+^^^^^^^^^^^^^^
 CASL supports common declarative language constructs such as ``if/else`` statments, loops, recursion, etc.
 
 
 Assignments
-^^^^^^^^^^^^
+#########################
 
 Types
-^^^^^^^^^^^^
+############
 A variable in CASL consists of either primitive or non-primitive types. The primitive types are::
 
 	bool
@@ -36,7 +36,7 @@ Non-primitive types in CASL are defined in ``.casl`` library files. By default, 
 
 
 ``IF/ELSE``
-^^^^^^^^^^^^
+#############
 ``IF`` statments in CASL are similar to C and Java based languages. An example is::
 
 	if (condition) then
@@ -48,10 +48,10 @@ Non-primitive types in CASL are defined in ``.casl`` library files. By default, 
 	endif;
 
 Loops
-^^^^^^^^^^^^
+#############
 
 Self Reference
-^^^^^^^^^^^^^^^^
+##########################
 To reference a parameter in the same entity, the ``self`` keyword must be used. For example::
 	
 	var int:newNum = self.oldNum * 2;
@@ -60,7 +60,7 @@ To reference a parameter in the same entity, the ``self`` keyword must be used. 
 
 
 Component Reference
-^^^^^^^^^^^^^^^^^^^^^^
+##########################
 These are::
 
 	FUNCTION.functionName();
