@@ -14,9 +14,11 @@ A descriptor can be either ``var``, ``agt``, ``grp``, or ``env``, which refers t
 Types
 ######
 
-Name
-######
+Types can either be primitives or non-primitives. Example::
 
+	var int:aNumber = 19; //A primitive
+	var Vector2:aVector; //A non-primitive
+	var Grid<agt.Cell>; //A paramaterized non-primitive
 
-Assignment
-###########
+As Paramater Values
+####################

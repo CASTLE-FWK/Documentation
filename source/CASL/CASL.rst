@@ -1,23 +1,11 @@
 CASL
-==================================
+==========
 
 Introduction
 ------------
 Complex Adaptive Systems Language (CASL) is a declarative agent-based modeling language for create large scale and complicated complex adaptive systems models.
 
 A note: the term CASL by itself refers to both CASL and CASL-SG. CASL-SG only refers to the additional features of CASL-SG. In the case of a CASL (and not CASL-SG) description, it will be stated as such.
-
-
-.. How to use CASL
-.. ------------
-.. - `Overview`_
-.. - `CASL Structure`_
-.. 	- `System`_
-.. 	- `Agents`_
-.. 	- `Environments`_
-.. - `CASL-SG`_
-.. 	- `Semantic Groups`_
-
 
 Overview
 --------
@@ -97,10 +85,5 @@ CASL Components
 
 .. include:: SystemCalls.rst
 
-
-
-.. Examples
-.. --------
-.. Example CASL and CASL-SG models are located in the CASTLE-FWK Github page. However, here are some useful simple models with thorough descriptions.
 
 .. include:: Examples/Examples.rst

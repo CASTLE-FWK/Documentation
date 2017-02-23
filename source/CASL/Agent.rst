@@ -63,19 +63,29 @@ This stores the ``AGENT`` behaviors. An example::
 
 Interactions
 ^^^^^^^^^^^^^
+This stores the ``AGENT`` interactions. An example::
 
+	checkNeighboursVelocity[AGENT][INSTANT](): {
+		BEHAVIOR.adjustVelocity(neighbour.AGT_INTERACTION.getVelocity());
+	};
 
 
 :doc:`More about Interactions <Blocks/Interactions>`
 
 Adaptation
 ^^^^^^^^^^
+This stores the ``AGENT`` adptations or adaptive processes. An example::
 
+	adaptState[IMPLICIT][NONE](var int:numNeighbors): {
+		if (numNeighbors > 3) then
+			BEHAVIOR.die();
+		endif;
+	}
 
 :doc:`More about Adaptations <Blocks/Adaptations>`
 
 Subsystems
 ^^^^^^^^^^^
-
+This stores the ``AGENT`` subsystems. In here you can declare multiple ``AGENT`` types. The parent type and other subsystems can interact.
 
 :doc:`More about Subsystems <Blocks/Subsystems>`

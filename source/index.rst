@@ -7,6 +7,8 @@ CASTLE documentation
 ==================================
 Documentation for the CASTLE framework.
 
+(I apologise for the lack of decent code highlighting, this will be fixed at some point in the future.)
+
 Introduction to CAS, CASL, & CASTLE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. toctree::
@@ -23,7 +25,8 @@ Complex Adaptive Systems Language
    :maxdepth: 2
 
    CASL <CASL/CASL.rst>
-   
+   CASL-SG <CASL/CASL-SG.rst>
+  
    
 Observation Tool
 ^^^^^^^^^^^^^^^^^
@@ -31,6 +34,14 @@ Observation Tool
    :maxdepth: 2
 
    Observation Tool <CASTLE/ObservationTool.rst>
+
+Getting Started with CASTLE & CASL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. toctree::
+   :maxdepth: 2
+
+   Getting Started with CASTLE & CASL <Installation.rst>
+
 
 Publications
 ^^^^^^^^^^^^^

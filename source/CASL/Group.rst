@@ -1,9 +1,24 @@
 SEMANTIC GROUP
 ---------------
 
+A semantic group in CASL-SG has the following structure::
+
+	GROUP aGroup: {
+			description: "";
+			group_rules: {
+				layout_type: BOUND;
+			};
+			parameters: {};
+			functions: {};
+			behaviors: {};
+			transmissions: {};
+			internals: {};
+	};
+
+
 Parameters
 ^^^^^^^^^^^
-This stores the ``AGENT`` parameters. Some examples::
+This stores the ``GROUP`` parameters. Some examples::
 
 	var bool:Alive = false;
 	agt Cell:aNeighbour;
@@ -12,19 +27,19 @@ This stores the ``AGENT`` parameters. Some examples::
 
 Functions
 ^^^^^^^^^
-This stores the ``AGENT`` functions. Some examples::
+This stores the ``GROUP`` functions. Some examples::
 
 	//Double a number and return
 	def doubleNumber(var int:num)(var int:newNum): {
 		newNum = num * 2;
 	};
 
-	//Set the position of this AGENT
+	//Set the position of this GROUP
 	def setPosition(var Vector2:pos)(): {
 		self.position = pos;
 	};
 
-	//Get the position of this AGENT
+	//Get the position of this GROUP
 	def getPosition()(var Vector2:pos): {
 		pos = self.position.
 	};
@@ -33,10 +48,28 @@ This stores the ``AGENT`` functions. Some examples::
 
 Behaviors
 ^^^^^^^^^^
+This stores the ``GROUP`` behaviors. An example::
 
+	changeStateToDead[SELF][DELAYED](): {
+		FUNCTION.setState(false);
+	};
 
 
 :doc:`More about Behaviors <Blocks/Behaviors>`
 
-GROUP_TRANSFER
-^^^^^^^^^^^^^^^
+Interactions
+^^^^^^^^^^^^^
+This stores the ``GROUP`` interactions. An example::
+
+	checkNeighboursVelocity[GROUP][INSTANT](): {
+		BEHAVIOR.adjustVelocity(neighbour.AGT_INTERACTION.getVelocity());
+	};
+
+
+:doc:`More about Interactions <Blocks/Interactions>`
+
+Transmissions
+^^^^^^^^^^^^^^
+
+Internals
+^^^^^^^^^^

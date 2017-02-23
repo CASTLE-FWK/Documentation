@@ -1,7 +1,7 @@
-CASL Basics
-------------
+Getting Started
+----------------
 
-CASL Structure
+CASL Overview
 ^^^^^^^^^^^^^^^
 
 
@@ -10,9 +10,29 @@ The Language
 ^^^^^^^^^^^^^^
 CASL supports common declarative language constructs such as ``if/else`` statments, loops, recursion, etc.
 
+Naming Rules & Conventions
+############################
+
+Naming rules in CASL are the same as in Java. These are:
+* All variable and entity names must start with an alpha character
+* 
+
+
+Reserved Keywords
+##################
+
+There are several reserved keywords in CASL, they are as follows::
+
+	if
+	else
+	then
+	var
+
 
 Assignments
 #########################
+
+
 
 Types
 ############
@@ -69,3 +89,4 @@ These are::
 	ADAPTATION.adaptationName();
 
 TODO: Special component references
+
