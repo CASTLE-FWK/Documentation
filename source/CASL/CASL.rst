@@ -1,10 +1,6 @@
 CASL
 ==================================
 
-.. contents::
-	:depth: 2
-
-
 Introduction
 ------------
 Complex Adaptive Systems Language (CASL) is a declarative agent-based modeling language for create large scale and complicated complex adaptive systems models.
