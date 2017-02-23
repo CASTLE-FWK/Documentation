@@ -1,6 +1,9 @@
 Functions
 =========
 
+Structure
+----------
+
 A function in CASL consists of ``def``, a function name, at least zero input parameters, and an optional single output parameter. An example is::
 
 	def function(var bool:in)(var int:out): {		
@@ -12,3 +15,12 @@ A function in CASL consists of ``def``, a function name, at least zero input par
 	};
 
 Return types are implicit in functions and only occur if a output variable is declared. If no output variable is declared, the function will not return anything.
+
+
+Input and output parameters
+----------------------------
+
+
+
+Examples
+---------

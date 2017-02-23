@@ -13,24 +13,21 @@ CASL Documentation
 	Examples/*
 
 Introduction
-===============
+------------
 Complex Adaptive Systems Language (CASL) is a declarative agent-based modeling language for create large scale and complicated complex adaptive systems models.
 
 A note: the term CASL by itself refers to both CASL and CASL-SG. CASL-SG only refers to the additional features of CASL-SG. In the case of a CASL (and not CASL-SG) description, it will be stated as such.
 
-Publications featuring CASL
-----------------------------
-* `L. Birdsey, C. Szabo, K. Falkner: CASL: A Declarative Domain Specific Language For Modeling Complex Adaptive Systems, Winter Simulation Conference 2016 <https://scholar.google.com.au/scholar?cluster=12737184980596789335&hl=en&as_sdt=0,5>`_
 
-How to use CASL
-===============
-- `Overview`_
-- `CASL Structure`_
-	- `System`_
-	- `Agents`_
-	- `Environments`_
-- `CASL-SG`_
-	- `Semantic Groups`_
+.. How to use CASL
+.. ------------
+.. - `Overview`_
+.. - `CASL Structure`_
+.. 	- `System`_
+.. 	- `Agents`_
+.. 	- `Environments`_
+.. - `CASL-SG`_
+.. 	- `Semantic Groups`_
 
 
 Overview
@@ -187,7 +184,11 @@ This stores the ``AGENT`` functions. Some examples::
 
 Behaviors
 ##########
+This stores the ``AGENT`` behaviors. An example::
 
+	changeStateToDead[SELF][DELAYED](): {
+		FUNCTION.setState(false);
+	};
 
 
 :doc:`More about Behaviors <Blocks/Behaviors>`
