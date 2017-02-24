@@ -7,6 +7,8 @@ CASTLE documentation
 ==================================
 Documentation for the CASTLE framework.
 
+Github link for CASTLE: `<https://github.com/CASTLE-FWK>`_
+
 (I apologise for the lack of decent code highlighting, this will be fixed at some point in the future.)
 
 Introduction to CAS, CASL, & CASTLE
