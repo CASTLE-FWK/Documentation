@@ -35,7 +35,14 @@ Unlike entity parameters, the ``SYSTEM`` parameters are generated in the simulat
 Functions
 ####################
 
-This stores the ``AGENT`` functions. Some examples::
+This stores the ``AGENT`` functions. 
+An ``initialize`` function is required, otherwise the ``SYSTEM`` will not be able to start. For example::
+
+	def initialize(var int:numAgents)(): {
+		self.
+	};
+
+Some examples::
 
 	//Double a number and return
 	def doubleNumber(var int:num)(var int:newNum): {
