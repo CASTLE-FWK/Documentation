@@ -1,13 +1,12 @@
 CASL-SG
 ============
 
-The large scale extension to CASL introduces a new entity type called ``GROUP``
+The large scale extension to CASL introduces a new entity type called ``GROUP``. This new entity allows several new approaches to constructing models, as well as allowing for much more optimized simulations.
+
 
 Overview 
 -------------------
 A generic CASL-SG model example is below::
-
-	import cas.test.commons.*;
 
 	SYSTEM: {
 		name: "CASL-SG EXAMPLE";

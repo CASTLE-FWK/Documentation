@@ -1,5 +1,9 @@
+CAS, CASL & CASTLE
+====================
+
+
 Introduction
-====================================
+---------------
 With the advent of highly connected and complicated systems permeating today's world, such as the internet, social networks, and smart cities, studying these systems to analyze or discover properties can provide great benefits. To study such systems, *models* are constructed. These models represent a certain facet of the system under-study and may not always include key features. There are several approaches to creating models such as using discrete event system specifications (DEVS), agent-based modeling (ABM), and complex networks (CN). These models are then *simulated* which allows a user to study their outputs, behaviors, and properties. 
 
 Many of the systems studied can be considered 'complex systems'; systems that contain a large number of complex interacting entities. Complex systems exist in many facets of reality, and have been studied exstensively. However, complex systems ignore properties that are in these systems such as self-organization, adaptation, emergence, and feedback loops. To study these properties, the term 'complex adaptive systems' is used. 
@@ -14,6 +18,7 @@ CASL and CASTLE are developed by Lachlan Birdsey for his PhD project, with the a
 .. Complex Adaptive Systems
 .. ====================================
 
-.. Yet Another Modeling Language
-.. ====================================
+Yet Another Modeling Language
+-----------------------------------
 
+There are quite a few modeling languages around for complex system modeling, some of which have been used for complex adaptive system modeling. This section consists of a brief description of some popular languages and how they compare with CASL. In addition, simple models will be presented in each language to compare how they look with their companion CASL model.

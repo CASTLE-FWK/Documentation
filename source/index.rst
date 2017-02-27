@@ -14,19 +14,18 @@ Github link for CASTLE: `<https://github.com/CASTLE-FWK>`_
 Introduction to CAS, CASL, & CASTLE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. toctree::
-   :maxdepth: 2
-   :hidden:
+   :maxdepth: 2  
 
-   Introduction To CASL, CASL, & CASTLE <Introduction.rst>
+   CAS, CASL & CASTLE <Introduction.rst>
 
-**Insert framework picture here**
+**Insert framework overview picture here**
 
 Complex Adaptive Systems Language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. toctree::
    :maxdepth: 2
 
-   CASL <CASL/CASL.rst>
+   Complex Adaptive Systems Language (CASL) <CASL/CASL.rst>
    CASL-SG <CASL/CASL-SG.rst>
   
    
@@ -44,6 +43,10 @@ Getting Started with CASTLE & CASL
 
    Getting Started with CASTLE & CASL <Installation.rst>
 
+Contact
+^^^^^^^^
+
+If you find any issues, please place them in the Documentation Github issue tracker: `<https://github.com/CASTLE-FWK/Documentation/issues>`_
 
 Publications
 ^^^^^^^^^^^^^
