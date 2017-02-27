@@ -31,7 +31,7 @@ This stores the ``AGENT`` parameters. Some examples::
 
 Functions
 ^^^^^^^^^
-This stores the ``AGENT`` functions. Some examples::
+This stores the ``AGENT`` functions. Each ``AGENT`` requires an ``initialize`` function to be declared and the CASL Editor will warn you if it is missing. Some examples::
 
 	//Double a number and return
 	def doubleNumber(var int:num)(var int:newNum): {

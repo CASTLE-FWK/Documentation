@@ -65,6 +65,7 @@ The most basic CASL file looks like::
 Model Structure
 -----------------
 The follwing section describes the functionality of each CASL component.
+A visual representation of the hierarchical structure of CASL is below **MAKE IMAGE**
 
 .. include:: System.rst
 

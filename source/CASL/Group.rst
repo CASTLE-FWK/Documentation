@@ -27,7 +27,7 @@ This stores the ``GROUP`` parameters. Some examples::
 
 Functions
 ^^^^^^^^^
-This stores the ``GROUP`` functions. Some examples::
+This stores the ``GROUP`` functions. Each ``GROUP`` requires an ``initialize`` function to be declared and the CASL Editor will warn you if it is missing.  Some examples::
 
 	//Double a number and return
 	def doubleNumber(var int:num)(var int:newNum): {

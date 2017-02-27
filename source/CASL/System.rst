@@ -35,7 +35,7 @@ Unlike entity parameters, the ``SYSTEM`` parameters are generated in the simulat
 Functions
 ####################
 
-This stores the ``AGENT`` functions. 
+This stores the ``SYSTEM`` functions. 
 An ``initialize`` function is required, otherwise the ``SYSTEM`` will not be able to start. For example::
 
 	def initialize(var int:numAgents)(): {
@@ -49,12 +49,12 @@ Some examples::
 		newNum = num * 2;
 	};
 
-	//Set the position of this AGENT
+	//Set the position of this SYSTEM
 	def setPosition(var Vector2:pos)(): {
 		self.position = pos;
 	};
 
-	//Get the position of this AGENT
+	//Get the position of this SYSTEM
 	def getPosition()(var Vector2:pos): {
 		pos = self.position.
 	};

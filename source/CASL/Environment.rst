@@ -56,7 +56,7 @@ This stores the ``ENVIRONMENT`` parameters. Some examples::
 
 Functions
 ^^^^^^^^^
-This stores the ``ENVIRONMENT`` functions. Some examples::
+This stores the ``ENVIRONMENT`` functions. Each ``ENVIRONMENT`` requires an ``initialize`` function to be declared and the CASL Editor will warn you if it is missing.  Some examples::
 
 	//Double a number and return
 	def doubleNumber(var int:num)(var int:newNum): {
