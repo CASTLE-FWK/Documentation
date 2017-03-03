@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'CASTLE'
-copyright = u'2017, Lachlan Birdsey'
+copyright = u'2017, Lachlan Birdsey. Created at the University of Adelaide [www.adelaide.edu.au]'
 author = u'Lachlan Birdsey'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -111,7 +111,7 @@ htmlhelp_basename = 'CASTLEdoc'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
-    # 'papersize': 'letterpaper',
+    'papersize': 'a4paper',
 
     # The font size ('10pt', '11pt' or '12pt').
     #

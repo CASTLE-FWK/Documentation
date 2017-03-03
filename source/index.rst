@@ -18,7 +18,7 @@ Introduction to CAS, CASL, & CASTLE
 
    CAS, CASL & CASTLE <Introduction.rst>
 
-**Insert framework overview picture here**
+**\*Insert framework overview picture here\***
 
 Complex Adaptive Systems Language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

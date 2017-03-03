@@ -19,3 +19,6 @@ A PDF of the documentation is also available at [Link](http://media.readthedocs.
 ###About
 CASTLE was created by Lachlan Birdsey as part of his PhD research on modeling and analysis of complex adpative systems.
 Publications using CASTLE and/or CASL can found [Link]()
+
+###COPYRIGHT
+CASTLE & CASL were created by Lachlan Birdsey at the University of Adelaide
