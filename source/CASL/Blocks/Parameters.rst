@@ -20,5 +20,5 @@ Types can either be primitives or non-primitives. Example::
 	var Vector2:aVector; //A non-primitive
 	var Grid<agt.Cell>; //A paramaterized non-primitive
 
-As Input or Output Values
+Input/Output Values
 ##########################
