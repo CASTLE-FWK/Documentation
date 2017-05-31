@@ -8,52 +8,37 @@ A semantic group in CASL-SG has the following structure::
 			group_rules: {
 				layout_type: BOUND;
 			};
-			parameters: {};
-			functions: {};
+			parameters: {
+				var LayoutParameters:layoutParameters;
+			};
+			functions: {
+				def initialize()(): {};
+			};
 			behaviors: {};
-			transmissions: {};
-			internals: {};
+			external_interactions: {};
+			internal_interactions: {};
 	};
 
 
 Parameters
 ^^^^^^^^^^^
-This stores the ``GROUP`` parameters. Some examples::
-
-	var bool:Alive = false;
-	agt Cell:aNeighbour;
+This stores the ``GROUP`` parameters.
 
 :doc:`More about Parameters <Blocks/Parameters>`
 
+An ``GROUP`` must have the ``layoutParameter`` variable. In addition, a layout representation variable must be declared that matches the ``layout_type``. For example, if the ``layout_type`` is set to ``GRID``::
+
+	var Grid<Cell>:cellGrid;
+
 Functions
 ^^^^^^^^^
-This stores the ``GROUP`` functions. Each ``GROUP`` requires an ``initialize`` function to be declared and the CASL Editor will warn you if it is missing.  Some examples::
-
-	//Double a number and return
-	def doubleNumber(var int:num)(var int:newNum): {
-		newNum = num * 2;
-	};
-
-	//Set the position of this GROUP
-	def setPosition(var Vector2:pos)(): {
-		self.position = pos;
-	};
-
-	//Get the position of this GROUP
-	def getPosition()(var Vector2:pos): {
-		pos = self.position.
-	};
+This stores the ``GROUP`` functions. Each ``GROUP`` requires an ``initialize`` function to be declared and the CASL Editor will warn you if it is missing. 
 
 :doc:`More about Functions <Blocks/Functions>`
 
 Behaviors
 ^^^^^^^^^^
-This stores the ``GROUP`` behaviors. An example::
-
-	changeStateToDead[SELF][DELAYED](): {
-		FUNCTION.setState(false);
-	};
-
+This stores the ``GROUP`` behaviors. 
 
 :doc:`More about Behaviors <Blocks/Behaviors>`
 
@@ -68,8 +53,8 @@ This stores the ``GROUP`` interactions. An example::
 
 :doc:`More about Interactions <Blocks/Interactions>`
 
-Transmissions
-^^^^^^^^^^^^^^
+External_Interactions
+^^^^^^^^^^^^^^^^^^^^^^^
 
-Internals
-^^^^^^^^^^
+Internal_Interactions
+^^^^^^^^^^^^^^^^^^^^^^^

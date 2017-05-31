@@ -10,8 +10,12 @@ An ``ENVIRONMENT`` in CASL has the following structure::
 			attributes: virtual
 			layout_type: BOUND;
 		};
-		parameters: {};
-		functions: {};
+		parameters: {
+			var LayoutParameters:layoutParameters;
+		};
+		functions: {
+			def initialize()(): {};
+		};
 		behaviors: {};
 		interactions: {};
 		adaptation: {};	
@@ -47,12 +51,14 @@ Layout_Type
 
 Parameters
 ^^^^^^^^^^^
-This stores the ``ENVIRONMENT`` parameters. Some examples::
-
-	var bool:Alive = false;
-	agt Cell:aNeighbour;
+This stores the ``ENVIRONMENT`` parameters. 
 
 :doc:`More about Parameters <Blocks/Parameters>`
+
+An ``ENVIRONMENT`` must have the ``layoutParameter`` variable. In addition, a layout representation variable must be declared that matches the ``layout_type``. For example, if the ``layout_type`` is set to ``GRID``::
+
+	var Grid<Cell>:cellGrid;
+
 
 Functions
 ^^^^^^^^^

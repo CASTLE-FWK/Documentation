@@ -12,19 +12,25 @@ Overview
 For CASL, each model consists of a single ``SYSTEM`` block, at least one ``AGENT`` block, and at least one ``ENVIRONMENT`` block.
 The most basic CASL file looks like::
 
+	import cas.test.commons.*;
 	SYSTEM: {
 		name: "CASL EXAMPLE";
 		description: "";
 		ruleset: {
 			type: lenient;
 			inspection_level: none;
-			lenient_exceptions: diversity modularity;
+			lenient_exceptions: diversity modularity adaptation; //This is current inactive
 			semantic_groups: disable;
 		};
-		parameters: {};
+		parameters: {
+			var * int:terminationStep = 1000;
+		};
 		functions: {};
 		agent_types: {
 			anAgent;
+		};
+		group_types: {
+			;
 		};
 		environment_types: {
 			anEnvironment;
@@ -37,7 +43,9 @@ The most basic CASL file looks like::
 	AGENT anAgent: {
 		description: "";
 		parameters: {};
-		functions: {};
+		functions: {
+			def initialize()(): {};
+		};
 		behaviors: {};
 		interactions: {};
 		adaptation: {};
@@ -51,13 +59,17 @@ The most basic CASL file looks like::
 			attributes: virtual
 			layout_type: BOUND;
 		};
-		parameters: {};
-		functions: {};
+		parameters: {
+			var LayoutParameters:layoutParameters;
+		};
+		functions: {
+			def initialize()(): {};
+		};
 		behaviors: {};
 		interactions: {};
 		adaptation: {};	
 		subsystems: {};
-		group_interactions: {};
+		group_interactions: {}; //This will soon not be necessary
 	};
 
 .. include:: BasicCASL.rst
@@ -87,5 +99,3 @@ CASL Components
 .. include:: SystemCalls.rst
 .. include:: Macros.rst
 
-
-.. include:: Examples/Examples.rst

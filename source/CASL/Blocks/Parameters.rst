@@ -19,6 +19,3 @@ Types can either be primitives or non-primitives. Example::
 	var int:aNumber = 19; //A primitive
 	var Vector2:aVector; //A non-primitive
 	var Grid<agt.Cell>; //A paramaterized non-primitive
-
-Input/Output Values
-##########################

@@ -5,7 +5,9 @@ An Agent in CASL and CASL-SG has the following structure::
 	AGENT theAgentsName: {
 		description: "";
 		parameters: {};
-		functions: {};
+		functions: {
+			def initialize()(): {};
+		};
 		behaviors: {};
 		interactions: {};
 		adaptation: {};
