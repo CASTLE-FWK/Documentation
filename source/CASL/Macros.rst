@@ -4,7 +4,7 @@ Macros
 CASL contains several useful macros for essential simulation function. The most important ones are ``POPULATE`` and
 
 POPULATE
-=========
+^^^^^^^^^
 The ``POPULATE`` macro allows SYSTEMS, ENVIRONMENTS, and GROUPS to create populations of entities. It takes the form of::
 
 	CASL.POPULATE[theLayoutVariable](layoutInitializationParameters)[aRange,theTypeOfEntityToBePopulated](entityInitializationParameters);

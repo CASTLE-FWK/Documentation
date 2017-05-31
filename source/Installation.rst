@@ -5,9 +5,11 @@ To get started using CASL and CASTLE there are a few things that need to be done
 
 Dependencies
 #############
-	`Repast Simphony <repast.github.io>`_
-	MongoDB (optional)
-	XText (this can be resolved automatically by Eclipse)
+	* `Repast Simphony <repast.github.io>`_
+
+	* MongoDB (optional)
+
+	* XText (this can be resolved automatically by Eclipse)
 
 Installation
 ##############
@@ -34,3 +36,4 @@ When you create a CASL model file and save, code generated for use in Repast wil
 	1) Create a Repast Simphony Project with the same name as your CASL project.
 	2) Copy and paste the directories and files located in ``src-gen`` into the Repast project. This includes the MODEL_NAME.rs directory. (This step will soon be unnecessary) 
 	3) Follow the guides on how to setup a Repast simulation located at the main `Repast site <repast.github.io>`_
+	4) Add the ``CASTLE.jar`` to the build path of the project and the run configuration

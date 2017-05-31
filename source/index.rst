@@ -9,6 +9,10 @@ Documentation for the CASTLE framework.
 
 Github link for CASTLE: `<https://github.com/CASTLE-FWK>`_
 
+Main CASTLE issue tracker: `<https://github.com/CASTLE-FWK/CASTLE/issues>`_
+
+:doc:`Current known major issues <Missing>`
+
 (I apologise for the lack of decent code highlighting, this will be fixed at some point in the future.)
 
 Introduction to CAS, CASL, & CASTLE
@@ -18,7 +22,12 @@ Introduction to CAS, CASL, & CASTLE
 
    CAS, CASL & CASTLE <Introduction.rst>
 
-**\*Insert framework overview picture here\***
+Getting Started with CASTLE & CASL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. toctree::
+   :maxdepth: 2
+
+   Getting Started with CASTLE & CASL <Installation.rst>
 
 Complex Adaptive Systems Language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -36,17 +45,14 @@ Observation Tool
 
    Observation Tool <CASTLE/ObservationTool.rst>
 
-Getting Started with CASTLE & CASL
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. toctree::
-   :maxdepth: 2
 
-   Getting Started with CASTLE & CASL <Installation.rst>
 
 Contact
 ^^^^^^^^
 
 If you find any issues, please place them in the Documentation Github issue tracker: `<https://github.com/CASTLE-FWK/Documentation/issues>`_
+
+Of course, there are many issues overall and n+1 things to be done. Please use the main CASTLE issue tracker: `<https://github.com/CASTLE-FWK/CASTLE/issues>`_
 
 Publications
 ^^^^^^^^^^^^^
