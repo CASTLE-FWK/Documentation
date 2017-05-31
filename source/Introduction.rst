@@ -12,7 +12,7 @@ Study of 'complex adaptive systems' has been around for several years, in partic
 
 The Complex Adaptive Systems Language (CASL) and framework, CASTLE, were designed with several benefits in mind. Firstly, a modeling language that can be used by a large range of researchers, with widly different coding abilites. Secondly, a language that considers properties such as self-organization and emergence to be key. Thirdly, a unified framework that allows domain experts to contribute their analysis tools directly. Finally, a simulation back-end that can execute large scale simulations for extended periods of time on commodity hardware.
 
-CASL and CASTLE are developed by Lachlan Birdsey for his PhD project, with the assistance of his supervisors Dr. Claudia Szabo, and Prof Katrina Falkner.
+CASL and CASTLE are developed by Lachlan Birdsey for his PhD project, with the assistance of his supervisors Dr. Claudia Szabo, and Prof. Katrina Falkner.
 
 
 .. Complex Adaptive Systems

@@ -85,6 +85,7 @@ CASL Components
 .. include:: Blocks/Subsystems.rst
 
 .. include:: SystemCalls.rst
+.. include:: Macros.rst
 
 
 .. include:: Examples/Examples.rst
