@@ -9,7 +9,9 @@ Naming Rules & Conventions
 ############################
 
 Naming rules in CASL are the same as in Java. These are:
-* All variable and entity names must start with an alpha character
+
+* All variable and entity names must start with an alphabetic character
+
 * 
 
 
@@ -22,11 +24,28 @@ There are several reserved keywords in CASL, they are as follows::
 	else
 	then
 	var
+	agt
+	grp
+	env
+	for
+	foreach
+	endif
+	endfor
 
 
-Assignments
-#########################
+Declaration and Assignment
+###########################
+Variable declarations must be prefaced with ``var``, for example::
+	
+	var int:anInteger = 39;
+	var Vector2:aVector;
+	var List<Item>:itemList;
 
+However, if you wish to store references to entities you must use ``agt``, ``grp``, or ``env`` for Agents, Groups, and Environments respectively. For example::
+
+	agt Cell:aCell;
+	grp Room:myRoom;
+	env Forest:theForest;
 
 
 Types
@@ -64,6 +83,17 @@ Non-primitive types in CASL are defined in ``.casl`` library files. By default, 
 
 Loops
 #############
+CASL supports ``for`` and ``foreach`` loops. These mostly follow Java conventions, with a couple of exceptions. For example::
+
+	//For-loop incrementer must be of form x = x + k (until issue is resolved)
+	for (var int:i = 0; i < 10; i = i +1) do
+		//Do something
+	endfor
+
+	foreach (Item item : ItemList) do
+		//Do something
+	endfor
+
 
 Self Reference
 ##########################
@@ -87,5 +117,5 @@ These are::
 	ADAPTATION.adaptationName();
 
 
-TODO: Special component references
+.. TODO: Special component references
 
