@@ -29,7 +29,12 @@ This stores the ``SYSTEM`` parameters. Some examples::
 	var int:numberOfCells = 800;
 	var string:UserConfigurationPath = "some/path/to/a/file";
 
-Unlike entity parameters, the ``SYSTEM`` parameters are generated in the simulation initialization file with their assignments (if any) set as their default values.
+To create parameters that can be altered for initialization, you can include a ``*``, for example::
+
+	var * int:numberOfCells = 400;
+	var * string:userNamePrefix;
+
+This currently only works with primitve types. If you assign a value to a variable, the value will become the initialization variables default.
 
 
 Functions
@@ -84,3 +89,5 @@ This stores a list of termination conditions that once met will cause the simula
 Example::
 
 	condition STEPS terminationStep;
+
+This ``end_condition`` variable must be declared in the ``Parameters`` section above.
