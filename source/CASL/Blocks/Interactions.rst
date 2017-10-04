@@ -39,7 +39,7 @@ There are 4 types of trigger types: ``STEP``, ``STATE``, ``PARAMETER``, ``INPUT`
 
 Input Parameters
 ################
-
+Any input parameters are allowed.
 
 
 Examples

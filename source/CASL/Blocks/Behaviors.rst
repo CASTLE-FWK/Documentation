@@ -27,6 +27,7 @@ There are 2 contact types, namely, ``SELF``, and ``AFFECT``
 
 * ``AFFECT``:
 
+If you select the wrong type, the CASL Editor will warn you and prevent your model code from generating.
 
 Trigger Types
 ####################
