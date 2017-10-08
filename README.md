@@ -1,4 +1,4 @@
-#CASTLE Documentation
+# CASTLE Documentation
 
 ### Introduction
 The CASTLE framework consists of the CASL modeler, a code generator, an observation tool, and some visual feedback.
