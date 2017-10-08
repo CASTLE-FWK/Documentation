@@ -28,11 +28,11 @@ An example of configuring the CASL Logger to only send to the console::
 
 An example of configuring the CASL Logger to send to both the console and a file::
 
-	CASL.logger(false, true, true "/users/aUser/simulations/output.txt", false, false, false);
+	CASL.LOGGER(false, true, true "/users/aUser/simulations/output.txt", false, false, false);
 
 An example of configuring the CASL logger and execution data writer for data farming (that is send all execution information to the data base while maintaining console printing of explcit logs)::
 
-	CASL.logger(false, true, false, "", false, false, true);
+	CASL.LOGGER(false, true, false, "", false, false, true);
 
 To send data to the Logger, in any function or feature simply::
 	
@@ -54,4 +54,11 @@ GET_ID
 Every Entity in CASL has an object called ``entityID()`` which is generated on creation and assigns each Entity a unique ID. While it's not always useful to have direct access to the ID, situations may occur when you need it. To access an Entity's ID, simply::
 
 	var EntityID:id = CASL.GET_ID();
+
+COUNT
+^^^^^^
+The ``COUNT`` macro simply counts the number of elements in a ``List`` that possess a particular value. For example::
+
+	//Count the number of neighbors that are alive
+	CASL.COUNT[neighborsList](FUNCTION.getState());
 
